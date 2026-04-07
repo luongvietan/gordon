@@ -26,7 +26,7 @@ export const landingCopy = {
     },
     body: {
       en: "An ag-tech startup based in Tây Ninh, Vietnam, building modular, sustainable poultry systems for small to mid-scale farmers. Our flagship product, The Chicken Fortress, turns standard shipping containers into high-efficiency habitats for 100 laying hens—designed around a circular waste-to-feed loop and pasture access.",
-      vi: "Startup ag-tech tại Tây Ninh, Việt Nam, phát triển hệ thống nuôi gà mô-đun bền vững cho nông hộ và trang trại quy mô vừa. Sản phẩm chủ lực The Chicken Fortress biến container tiêu chuẩn thành chuồng nuôi hiệu suất cao cho 100 gà mái đẻ—thiết kế theo mô hình tuần hoàn phân → đạm và cho gà ra bãi chăn thả.",
+      vi: "Startup ag-tech tại Tây Ninh, Việt Nam, phát triển hệ thống nuôi gà mô-đun bền vững cho nông hộ và trang trại quy mô vừa. Sản phẩm chủ lực The Chicken Fortress biến container tiêu chuẩn thành chuồng nuôi hiệu suất cao cho 100 con gà mái đẻ—thiết kế theo mô hình tuần hoàn phân → đạm và cho gà ra bãi chăn thả.",
     },
   },
   valueProp: {
@@ -73,7 +73,7 @@ export const landingCopy = {
     },
     subhead: {
       en: "A container-based habitat for 100 laying hens that turns manure into feed, reduces input costs, and enables pasture access.",
-      vi: "Giải pháp chuồng gà dạng container cho 100 gà mái đẻ: biến phân thành nguồn đạm, giảm chi phí thức ăn và cho gà ra bãi chăn thả.",
+      vi: "Giải pháp chuồng gà dạng container cho 100 con gà mái đẻ: biến phân thành nguồn đạm, giảm chi phí thức ăn và cho gà ra bãi chăn thả.",
     },
     ctaExplore: { en: "Explore Product", vi: "Khám phá sản phẩm" },
     ctaInvest: { en: "Invest Now", vi: "Đầu tư ngay" },
@@ -92,13 +92,13 @@ export const landingCopy = {
   ],
   product: {
     kicker: { en: "Product Detail", vi: "Chi tiết sản phẩm" },
-    title: { en: "The 100-Hen Smart Container", vi: "Container thông minh cho 100 gà" },
+    title: { en: "The 100-Hen Smart Container", vi: "Container thông minh cho 100 con gà" },
     body1: {
       en: "The Chicken Fortress converts a standard shipping container into a self-contained habitat for up to 100 laying hens. Slatted flooring drops manure into a dedicated vermiculture zone where worms and native flies consume waste before ammonia builds; larvae are auto-harvested back to the hens as protein. Timed electric doors provide daytime pasture access for natural foraging.",
-      vi: "The Chicken Fortress biến container tiêu chuẩn thành môi trường nuôi khép kín cho tối đa 100 gà mái đẻ. Sàn thoáng dẫn phân xuống khu nuôi trùn quế riêng; trùn và ruồi bản địa xử lý phân trước khi phát sinh amoniac, ấu trùng được thu tự động để gà ăn lại như nguồn đạm. Cửa điện hẹn giờ giúp gà ra bãi ban ngày để tự kiếm ăn.",
+      vi: "The Chicken Fortress biến container tiêu chuẩn thành môi trường nuôi khép kín cho tối đa 100 con gà mái đẻ. Sàn thoáng dẫn phân xuống khu nuôi trùn quế riêng; trùn và ruồi bản địa xử lý phân trước khi phát sinh amoniac, ấu trùng được thu tự động để gà ăn lại như nguồn đạm. Cửa điện hẹn giờ giúp gà ra bãi ban ngày để tự kiếm ăn.",
     },
     stat1: { en: "Capacity", vi: "Công suất" },
-    stat1Value: { en: "100 Hens", vi: "100 gà" },
+    stat1Value: { en: "100 Hens", vi: "100 con gà" },
     stat2: { en: "Automated", vi: "Tự động" },
     stat2Value: { en: "Timed Pasture Doors", vi: "Cửa ra bãi hẹn giờ" },
   },
@@ -189,7 +189,7 @@ export const landingCopy = {
       { label: { en: "Egg price (conservative)", vi: "Giá trứng (thận trọng)" }, value: "$0.20 / egg" },
       { label: { en: "Castings / hen / year", vi: "Phân trùn / gà / năm" }, value: "35 kg" },
       { label: { en: "Castings wholesale price", vi: "Giá sỉ phân trùn" }, value: "$0.35 / kg" },
-      { label: { en: "Net profit / unit / year (100 hens)", vi: "Lợi nhuận ròng / hệ / năm (100 gà)" }, value: "~$4,200" },
+      { label: { en: "Net profit / unit / year (100 hens)", vi: "Lợi nhuận ròng / hệ / năm (100 con gà)" }, value: "~$4,200" },
     ],
   },
   market: {
@@ -231,7 +231,7 @@ export const landingCopy = {
     },
     subtagline: {
       en: "The Chicken Fortress: 100-hen systems with a circular waste-to-feed loop and daytime pasture access.",
-      vi: "The Chicken Fortress: hệ 100 gà mái đẻ với vòng tuần hoàn phân → đạm và ra bãi ban ngày.",
+      vi: "The Chicken Fortress: hệ 100 con gà mái đẻ với vòng tuần hoàn phân → đạm và ra bãi ban ngày.",
     },
     quickLinks: { en: "Quick Links", vi: "Liên kết nhanh" },
     links: {

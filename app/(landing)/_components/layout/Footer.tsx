@@ -7,7 +7,7 @@ export function Footer({ locale }: { locale: Locale }) {
   const otherLocale: Locale = locale === "en" ? "vi" : "en";
 
   return (
-    <footer className="bg-surface-container w-full mt-auto">
+    <footer data-animate="footer" className="bg-surface-container w-full mt-auto">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="space-y-4">
           <Link href={`/${locale}#top`} aria-label={landingCopy.brand} className="inline-flex">

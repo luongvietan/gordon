@@ -28,7 +28,15 @@ export function TopNav({ locale }: { locale: Locale }) {
 
     const headerOffset = overlayTopPx || headerRowRef.current?.getBoundingClientRect().height || 0;
     const y = window.scrollY + el.getBoundingClientRect().top - headerOffset - 8;
-    window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+    const targetY = Math.max(0, y);
+
+    const lenis = window.__lenis;
+    if (lenis) {
+      lenis.scrollTo(targetY, { immediate: false });
+      return;
+    }
+
+    window.scrollTo({ top: targetY, behavior: "smooth" });
   };
 
   useEffect(() => {

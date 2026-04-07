@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro, Inter } from "next/font/google";
 import "./globals.css";
+import { ScrollEffects } from "./_components/ScrollEffects";
 
 const headline = Be_Vietnam_Pro({
   variable: "--font-headline",
@@ -32,13 +33,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${headline.variable} ${body.variable} h-full antialiased scroll-smooth`}
+      className={`${headline.variable} ${body.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         />
+        <ScrollEffects />
         {children}
       </body>
     </html>
