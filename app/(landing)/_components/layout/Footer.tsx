@@ -1,10 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import ReactCountryFlag from "react-country-flag";
 import type { Locale } from "../../content/landingCopy";
 import { landingCopy, t } from "../../content/landingCopy";
 
 export function Footer({ locale }: { locale: Locale }) {
   const otherLocale: Locale = locale === "en" ? "vi" : "en";
+  const localeFlag = locale === "en" ? "US" : "VN";
+  const otherLocaleFlag = otherLocale === "en" ? "US" : "VN";
 
   return (
     <footer data-animate="footer" className="bg-surface-container w-full mt-auto">
@@ -49,10 +52,30 @@ export function Footer({ locale }: { locale: Locale }) {
         <div className="space-y-4 font-headline text-sm">
           <p className="font-bold text-primary">{t(locale, landingCopy.footer.language)}</p>
           <div className="flex gap-3">
-            <span className="text-primary font-bold">{locale.toUpperCase()}</span>
+            <span className="text-primary font-bold inline-flex items-center gap-2">
+              <ReactCountryFlag
+                countryCode={localeFlag}
+                svg
+                aria-hidden="true"
+                style={{ width: "1.35em", height: "1.35em" }}
+                title={locale.toUpperCase()}
+              />
+              <span className="sr-only">{locale.toUpperCase()}</span>
+            </span>
             <span className="text-on-surface-variant">|</span>
-            <Link className="text-on-surface-variant hover:underline" href={`/${otherLocale}`}>
-              {otherLocale.toUpperCase()}
+            <Link
+              className="text-on-surface-variant hover:underline inline-flex items-center gap-2"
+              href={`/${otherLocale}`}
+              aria-label={`Switch language to ${otherLocale.toUpperCase()}`}
+            >
+              <ReactCountryFlag
+                countryCode={otherLocaleFlag}
+                svg
+                aria-hidden="true"
+                style={{ width: "1.35em", height: "1.35em" }}
+                title={otherLocale.toUpperCase()}
+              />
+              <span className="sr-only">{otherLocale.toUpperCase()}</span>
             </Link>
           </div>
           <p className="text-on-surface-variant mt-8">

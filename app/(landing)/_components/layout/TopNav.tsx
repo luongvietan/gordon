@@ -6,9 +6,11 @@ import type { Locale } from "../../content/landingCopy";
 import { landingCopy, t } from "../../content/landingCopy";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { LandingIcon } from "../ui/LandingIcon";
+import ReactCountryFlag from "react-country-flag";
 
 export function TopNav({ locale }: { locale: Locale }) {
   const otherLocale: Locale = locale === "en" ? "vi" : "en";
+  const otherLocaleFlag = otherLocale === "en" ? "US" : "VN";
   const [isOpen, setIsOpen] = useState(false);
   const headerRowRef = useRef<HTMLDivElement | null>(null);
   const mobilePanelRef = useRef<HTMLDivElement | null>(null);
@@ -222,7 +224,14 @@ export function TopNav({ locale }: { locale: Locale }) {
             onClick={() => setIsOpen(false)}
             aria-label={`Switch language to ${otherLocale.toUpperCase()}`}
           >
-            {otherLocale.toUpperCase()}
+            <ReactCountryFlag
+              countryCode={otherLocaleFlag}
+              svg
+              aria-hidden="true"
+              style={{ width: "1.35em", height: "1.35em" }}
+              title={otherLocale.toUpperCase()}
+            />
+            <span className="sr-only">{otherLocale.toUpperCase()}</span>
           </Link>
           <Link
             href={`/${locale}#investment`}
