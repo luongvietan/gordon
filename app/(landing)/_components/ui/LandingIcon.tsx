@@ -3,6 +3,7 @@ import {
   ArrowRight,
   Bug,
   CheckCircle2,
+  Download,
   DoorOpen,
   Egg,
   Leaf,
@@ -68,6 +69,8 @@ export function LandingIcon({ name, size = 24, className, ...rest }: Props) {
         return X;
       case "arrow_right":
         return ArrowRight;
+      case "download":
+        return Download;
       default:
         return Leaf;
     }

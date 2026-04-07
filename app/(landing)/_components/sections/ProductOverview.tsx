@@ -1,5 +1,6 @@
 import type { Locale } from "../../content/landingCopy";
 import { landingCopy, t } from "../../content/landingCopy";
+import { LandingIcon } from "../ui/LandingIcon";
 
 function StatCard({ title, subtitle }: { title: string; subtitle: string }) {
   return (
@@ -38,6 +39,16 @@ export function ProductOverview({ locale }: { locale: Locale }) {
         <p data-anim="body" className="text-on-surface-variant leading-relaxed">
           {t(locale, landingCopy.product.body1)}
         </p>
+
+        <div className="flex flex-wrap gap-3 pt-2" data-anim="cta">
+          <a
+            href="/api/product-details"
+            className="bg-primary text-white px-5 sm:px-6 py-3 rounded-xl font-bold inline-flex items-center gap-2 hover:opacity-90 transition-opacity"
+          >
+            {t(locale, landingCopy.product.downloadPdf)}
+            <LandingIcon name="download" size={18} className="text-white" />
+          </a>
+        </div>
 
         <div className="pt-4 grid grid-cols-2 gap-4">
           <StatCard

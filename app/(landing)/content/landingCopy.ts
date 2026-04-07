@@ -97,6 +97,7 @@ export const landingCopy = {
       en: "The Chicken Fortress converts a standard shipping container into a self-contained habitat for up to 100 laying hens. Slatted flooring drops manure into a dedicated vermiculture zone where worms and native flies consume waste before ammonia builds; larvae are auto-harvested back to the hens as protein. Timed electric doors provide daytime pasture access for natural foraging.",
       vi: "The Chicken Fortress biến container tiêu chuẩn thành môi trường nuôi khép kín cho tối đa 100 con gà mái đẻ. Sàn thoáng dẫn phân xuống khu nuôi trùn quế riêng; trùn và ruồi bản địa xử lý phân trước khi phát sinh amoniac, ấu trùng được thu tự động để gà ăn lại như nguồn đạm. Cửa điện hẹn giờ giúp gà ra bãi ban ngày để tự kiếm ăn.",
     },
+    downloadPdf: { en: "Download full product details (PDF)", vi: "Tải bản mô tả chi tiết (PDF)" },
     stat1: { en: "Capacity", vi: "Công suất" },
     stat1Value: { en: "100 Hens", vi: "100 con gà" },
     stat2: { en: "Automated", vi: "Tự động" },
