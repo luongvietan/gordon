@@ -1,13 +1,12 @@
 import type { Locale } from "../../content/landingCopy";
 import { landingCopy, t } from "../../content/landingCopy";
+import { LandingIcon } from "../ui/LandingIcon";
 
 function Step({ icon, label }: { icon: string; label: string }) {
   return (
     <div className="text-center space-y-4">
       <div className="w-20 h-20 mx-auto bg-primary-container rounded-full flex items-center justify-center border-4 border-primary-fixed/20">
-        <span className="material-symbols-outlined text-4xl" aria-hidden="true">
-          {icon}
-        </span>
+        <LandingIcon name={icon} size={40} strokeWidth={2.25} className="text-primary-fixed" />
       </div>
       <div className="flex flex-col gap-1">
         <p className="font-bold text-lg">{label}</p>
@@ -18,7 +17,7 @@ function Step({ icon, label }: { icon: string; label: string }) {
 
 export function HowItWorks({ locale }: { locale: Locale }) {
   return (
-    <section className="bg-primary text-white py-16 sm:py-24">
+    <section id="how" className="bg-primary text-white py-16 sm:py-24">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-black mb-4">

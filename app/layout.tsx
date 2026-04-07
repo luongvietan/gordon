@@ -17,8 +17,11 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "The Chicken Fortress | Smart Sustainable Poultry Systems",
+  title: "Công Ty Kim Và Gordon | Smart Sustainable Poultry Systems",
   description: "Revolutionizing poultry farming with smart, sustainable systems.",
+  icons: {
+    icon: [{ url: "/brand/favicon.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({

@@ -1,5 +1,6 @@
 import type { Locale } from "../../content/landingCopy";
 import { landingCopy, t } from "../../content/landingCopy";
+import { LandingIcon } from "../ui/LandingIcon";
 
 function TrustItem({
   icon,
@@ -11,9 +12,7 @@ function TrustItem({
   return (
     <div className="flex items-start gap-4">
       <div className="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center text-primary-fixed">
-        <span className="material-symbols-outlined" aria-hidden="true">
-          {icon}
-        </span>
+        <LandingIcon name={icon} size={22} strokeWidth={2.25} className="text-primary-fixed" />
       </div>
       <div>
         <p className="font-bold text-primary">{title}</p>

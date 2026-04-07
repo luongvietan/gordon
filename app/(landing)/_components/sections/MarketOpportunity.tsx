@@ -1,12 +1,16 @@
 import type { Locale } from "../../content/landingCopy";
 import { landingCopy, t } from "../../content/landingCopy";
+import { LandingIcon } from "../ui/LandingIcon";
 
 function Bullet({ children }: { children: React.ReactNode }) {
   return (
     <li className="flex gap-4 items-center">
-      <span className="material-symbols-outlined text-primary" aria-hidden="true">
-        check_circle
-      </span>
+      <LandingIcon
+        name="check_circle"
+        size={22}
+        strokeWidth={2.5}
+        className="text-primary shrink-0"
+      />
       <span>{children}</span>
     </li>
   );
@@ -37,7 +41,7 @@ export function MarketOpportunity({ locale }: { locale: Locale }) {
         <img
           alt="Sustainable Farming Future"
           className="w-full h-auto rounded-xl shadow-2xl"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdTYIn3_EP2jujIfmjyP7US-wfqgxYqJIhvxoqTNljMgFjKJvWSZIs-jYCFHHeFwe_Qk88aCjt5B_aPlu2mX8nb2-DxCj3xUS-m3lsZXFD0yy27lEJDtFOYYnKA1y1jQAQQ6baaMEjSNuy18WacMooCzGWIJbHtIXumduZ1Qr8z6SSREZeqFm9GKmTiPL9Y5LEQ7VaGJv1rtG7ReslGdYIRr5n5ayx0MJDgL43xOTAwLYrq3FnxjEibVNNTQyWCZ9aki-1gUOFC3vS"
+          src="/images/demand.png"
         />
       </div>
     </section>

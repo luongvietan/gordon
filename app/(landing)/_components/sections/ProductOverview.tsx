@@ -19,8 +19,8 @@ export function ProductOverview({ locale }: { locale: Locale }) {
       <div className="order-2 lg:order-1">
         <img
           alt="Product Details"
-          className="w-full rounded-xl shadow-xl aspect-square object-cover"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP6NwDQgqyILx4pVVzBPYYlWbhxJS18roXQHuJqGpTqnHpk-aiwHcQSAYH1qHYdGVHGkFVi6RmuU6ogLIspzxKll4E9Ita4U_gcFngYLjvewIQlTzuYG3Xsz7ZwdewLxtt1lHBzERtmy4wXMlNG6isPTmX1S8d8EsE2LeBMgijOQIBT8b9S2kv9gatKtSFHDUQN7mnGf24vxqAs1hP-rQ5bgSkYRptszQlncJTPRkaWgZhft6bd3TbC9iNPvZLyPLr22wLx-zzcYVG"
+          className="w-full rounded-xl shadow-xl aspect-[1170/600] object-contain bg-surface-container-low"
+          src="/images/product_detail.png"
         />
       </div>
 

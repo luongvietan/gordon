@@ -1,5 +1,6 @@
 import type { Locale } from "../../content/landingCopy";
 import { landingCopy, t } from "../../content/landingCopy";
+import { LandingIcon } from "../ui/LandingIcon";
 
 function FeatureCard({
   icon,
@@ -12,9 +13,7 @@ function FeatureCard({
 }) {
   return (
     <div className="p-8 bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/10">
-      <span className="material-symbols-outlined text-primary text-3xl mb-4" aria-hidden="true">
-        {icon}
-      </span>
+      <LandingIcon name={icon} size={28} strokeWidth={2.25} className="text-primary mb-4" />
       <p className="font-bold text-lg">{title}</p>
       <p className="text-sm text-secondary">{desc}</p>
     </div>
@@ -23,7 +22,10 @@ function FeatureCard({
 
 export function FeaturesGrid({ locale }: { locale: Locale }) {
   return (
-    <section className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <section
+      id="features"
+      className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24"
+    >
       <h2 className="text-2xl sm:text-3xl font-black text-primary mb-10 sm:mb-12 text-center">
         {t(locale, landingCopy.features.title)}
       </h2>

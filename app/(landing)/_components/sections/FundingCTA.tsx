@@ -1,5 +1,6 @@
 import type { Locale } from "../../content/landingCopy";
 import { landingCopy, t } from "../../content/landingCopy";
+import { LandingIcon } from "../ui/LandingIcon";
 
 export function FundingCTA({ locale }: { locale: Locale }) {
   return (
@@ -30,12 +31,17 @@ export function FundingCTA({ locale }: { locale: Locale }) {
           </div>
         </div>
 
+        <p className="text-primary-fixed/90 font-semibold max-w-3xl mx-auto leading-relaxed">
+          {t(locale, landingCopy.funding.extra)}
+        </p>
+
         <div className="pt-8">
           <a
             href="#investment"
-            className="inline-block bg-tertiary-fixed-dim text-primary px-8 sm:px-12 py-4 sm:py-5 rounded-xl font-black text-lg sm:text-xl hover:scale-105 transition-transform"
+            className="inline-flex items-center gap-2 bg-tertiary-fixed-dim text-primary px-8 sm:px-12 py-4 sm:py-5 rounded-xl font-black text-lg sm:text-xl hover:scale-105 transition-transform"
           >
             {t(locale, landingCopy.funding.cta)}
+            <LandingIcon name="arrow_right" size={20} className="text-primary" />
           </a>
         </div>
       </div>
