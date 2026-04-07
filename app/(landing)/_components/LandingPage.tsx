@@ -15,7 +15,7 @@ import type { Locale } from "../content/landingCopy";
 
 export function LandingPage({ locale }: { locale: Locale }) {
   return (
-    <div className="text-on-surface bg-background min-h-screen">
+    <div className="text-on-surface bg-background landing-grass-bg min-h-screen">
       <TopNav locale={locale} />
       <main className="pt-20 sm:pt-24 overflow-x-hidden">
         <Hero locale={locale} />
