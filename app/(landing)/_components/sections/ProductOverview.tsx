@@ -42,7 +42,8 @@ export function ProductOverview({ locale }: { locale: Locale }) {
 
         <div className="flex flex-wrap gap-3 pt-2" data-anim="cta">
           <a
-            href="/api/product-details"
+            href="/files/Chicken-Coop-Full-Product-Details.pdf"
+            download
             className="bg-primary text-white px-5 sm:px-6 py-3 rounded-xl font-bold inline-flex items-center gap-2 hover:opacity-90 transition-opacity"
           >
             {t(locale, landingCopy.product.downloadPdf)}
