@@ -1,12 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const ALBUM_DIR = path.join(
-  process.cwd(),
-  "app",
-  "Wedding Album-20260408T044954Z-3-001",
-  "Wedding Album",
-);
+/** Served as static files under `public/wedding-album/media` (not via a Route Handler) so Vercel serverless bundles stay under size limits. */
+const ALBUM_DIR = path.join(process.cwd(), "public", "wedding-album", "media");
 
 function orderAlbumFiles(files: string[]): string[] {
   const jpg = files.filter((f) => /\.jpe?g$/i.test(f));
@@ -40,14 +36,6 @@ export function getAlbumImageFilenames(): string[] {
   return orderAlbumFiles(files);
 }
 
-export function getAlbumImagePath(filename: string): string | null {
-  const allowed = new Set(getAlbumImageFilenames());
-  if (!allowed.has(filename)) {
-    return null;
-  }
-  return path.join(ALBUM_DIR, filename);
-}
-
 export function albumImageSrcPath(filename: string): string {
-  return `/wedding-album/image/${encodeURIComponent(filename)}`;
+  return `/wedding-album/media/${encodeURIComponent(filename)}`;
 }

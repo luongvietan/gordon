@@ -26,7 +26,7 @@ export async function middleware(request: NextRequest) {
 
   const login = new URL("/wedding-album/login", request.url);
   const from =
-    pathname.startsWith("/wedding-album/image/") ? "/wedding-album" : pathname;
+    pathname.startsWith("/wedding-album/media/") ? "/wedding-album" : pathname;
   login.searchParams.set("from", from);
   return NextResponse.redirect(login);
 }
