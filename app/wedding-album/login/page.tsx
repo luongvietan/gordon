@@ -51,7 +51,7 @@ function LoginForm() {
       </div>
       <div className="flex flex-col gap-2">
         <label htmlFor="album-password" className="text-sm text-white/70">
-          Mật khẩu
+          Password
         </label>
         <input
           id="album-password"

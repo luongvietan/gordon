@@ -32,7 +32,7 @@ export async function POST(request: Request) {
   const password = typeof body.password === "string" ? body.password : "";
 
   if (!safeEqualPassword(password, expected)) {
-    return NextResponse.json({ error: "Sai mật khẩu" }, { status: 401 });
+    return NextResponse.json({ error: "Invalid password" }, { status: 401 });
   }
 
   const secret = getAlbumAuthSecret();

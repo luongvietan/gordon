@@ -1,5 +1,7 @@
 "use client";
 
+/* Album URLs use `unoptimized` so the browser loads static files with the auth cookie. Next's image optimizer fetches server-side without cookies and hits middleware → login redirect. */
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -135,6 +137,7 @@ function Lightbox({
           src={src}
           alt=""
           fill
+          unoptimized
           className="object-contain"
           sizes="100vw"
           priority
@@ -194,6 +197,7 @@ function ScrollRevealImage({
             alt=""
             width={2000}
             height={3000}
+            unoptimized
             sizes="(max-width: 1024px) 100vw, 1024px"
             className="h-auto w-full object-contain transition group-hover:brightness-95"
             loading={index === 0 ? "eager" : "lazy"}
