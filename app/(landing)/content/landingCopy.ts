@@ -243,7 +243,7 @@ export const landingCopy = {
       market: { en: "Market", vi: "Thị trường" },
     },
     language: { en: "Language", vi: "Ngôn ngữ" },
-    copyright: "© 2024 Công Ty Kim Và Gordon. All rights reserved.",
+    copyright: "© 2026 Công Ty Kim Và Gordon. All rights reserved.",
   },
 } as const;
 
